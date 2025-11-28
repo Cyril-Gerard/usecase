@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "id": "auth",
+      "type": "service"
+    },
+    {
+      "id": "payments",
+      "type": "service"
+    },
+    {
+      "id": "inventory",
+      "type": "service"
+    },
+    {
+      "id": "search",
+      "type": "service"
+    }
+  ],
+  "edges": [
+    {
+      "src": "auth",
+      "dst": "payments"
+    },
+    {
+      "src": "payments",
+      "dst": "inventory"
+    },
+    {
+      "src": "inventory",
+      "dst": "search"
+    }
+  ]
+}
