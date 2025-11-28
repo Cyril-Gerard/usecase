@@ -1,0 +1,12 @@
+auth:
+  error_rate: 0.01
+  latency_ms: 200
+inventory:
+  error_rate: 0.015
+  latency_ms: 250
+payments:
+  error_rate: 0.02
+  latency_ms: 300
+search:
+  error_rate: 0.005
+  latency_ms: 150
